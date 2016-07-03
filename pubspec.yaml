@@ -1,0 +1,8 @@
+name: octicons
+version: 4.2.0
+description: A scalable set of icons handcrafted with <3 by GitHub.
+homepage: https://github.com/dart-league/octicons
+authors:
+  - Luis Vargas <luisvargastijerino@gmail.com)
+  - GitHub Inc.
+license: (OFL-1.1 OR MIT)

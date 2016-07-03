@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'build/octicons.css': 'index.scss'
+          'lib/build/octicons.css': 'index.scss'
         }
       }
     },
@@ -21,17 +21,18 @@ module.exports = function(grunt) {
         ]
       },
       build: {
-        src: 'build/**/*.*css'
+        src: 'lib/build/**/*.*css'
       }
     },
 
     cssnano: {
       options: {
+        sourcemap: true
       },
       dist: {
         files: {
-          'build/octicons.min.css': 'build/octicons.css',
-          'build/font/octicons.min.css': 'build/font/octicons.css'
+          'lib/build/octicons.min.css': 'lib/build/octicons.css',
+          'lib/build/font/octicons.min.css': 'lib/build/font/octicons.css'
         }
       }
     },
@@ -56,7 +57,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/svg',
           src: ['*.svg'],
-          dest: 'build/svg'
+          dest: 'lib/build/svg'
         }]
       }
     },
@@ -66,7 +67,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'lib/svg',
         src: ['*.svg'],
-        dest: 'build/',
+        dest: 'lib/build/',
         options: {
           mode: {
             symbol: {
@@ -98,14 +99,14 @@ module.exports = function(grunt) {
       },
       octicons_css: {
         src: 'lib/svg/*.svg',
-        dest: 'build/font',
+        dest: 'lib/build/font',
         options: {
           template: 'lib/font/template.css'
         }
       },
       octicons_scss: {
         src: 'lib/svg/*.svg',
-        dest: 'build/font',
+        dest: 'lib/build/font',
         options: {
           stylesheet: 'scss',
           template: 'lib/font/template.scss'
@@ -115,12 +116,12 @@ module.exports = function(grunt) {
 
     clean: {
       font: [
-        'build/font/*'
+        'lib/build/font/*'
       ],
       svg: [
-        'build/svg/*',
-        'build/sprite.octicons.svg',
-        'build/octicons.*'
+        'lib/build/svg/*',
+        'lib/build/sprite.octicons.svg',
+        'lib/build/octicons.*'
       ]
     }
   });

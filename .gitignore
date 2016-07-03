@@ -1,2 +1,7 @@
 node_modules
 .DS_Store
+/.idea/
+/octicons.iml
+/.packages
+/packages/
+/pubspec.lock

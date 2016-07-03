@@ -1,12 +1,14 @@
+$octicons-font-path: "./" !default;
+
 
 @font-face {
   font-family:"Octicons";
-  src:url("octicons.eot?5e5746b1afa34d378ebe1091967df505");
-  src:url("octicons.eot?#iefix") format("embedded-opentype"),
-		url("octicons.woff2?5e5746b1afa34d378ebe1091967df505") format("woff2"),
-		url("octicons.woff?5e5746b1afa34d378ebe1091967df505") format("woff"),
-		url("octicons.ttf?5e5746b1afa34d378ebe1091967df505") format("truetype"),
-		url("octicons.svg?5e5746b1afa34d378ebe1091967df505#octicons") format("svg");
+  src:url("#{$octicons-font-path}octicons.eot?a5b880925c21a0bc399679a387c84eac");
+  src:url("#{$octicons-font-path}octicons.eot?#iefix") format("embedded-opentype"),
+		url("#{$octicons-font-path}octicons.woff2?a5b880925c21a0bc399679a387c84eac") format("woff2"),
+		url("#{$octicons-font-path}octicons.woff?a5b880925c21a0bc399679a387c84eac") format("woff"),
+		url("#{$octicons-font-path}octicons.ttf?a5b880925c21a0bc399679a387c84eac") format("truetype"),
+		url("#{$octicons-font-path}octicons.svg?a5b880925c21a0bc399679a387c84eac#octicons") format("svg");
   font-weight:normal;
   font-style:normal;
 }
@@ -26,7 +28,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   speak: none;
 }
